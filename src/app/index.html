@@ -1,0 +1,157 @@
+<head>
+  <title>Audiofy 2</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="renderer.js" defer></script>
+</head>
+<body>
+  <header id="titlebar">
+    <div id="drag-region">
+      <div id="window-title">
+        <span>Audiofy 2</span>
+      </div>
+      <div id="window-controls">
+
+        <div class="button" id="min-button">
+          <img class="icon" srcset="img/min-w-10.png 1x, img/min-w-12.png 1.25x, img/min-w-15.png 1.5x, img/min-w-15.png 1.75x, img/min-w-20.png 2x, img/min-w-20.png 2.25x, img/min-w-24.png 2.5x, img/min-w-30.png 3x, img/min-w-30.png 3.5x" draggable="false" />
+        </div>
+  
+        <div class="button" id="max-button">
+          <img class="icon" srcset="img/max-w-10.png 1x, img/max-w-12.png 1.25x, img/max-w-15.png 1.5x, img/max-w-15.png 1.75x, img/max-w-20.png 2x, img/max-w-20.png 2.25x, img/max-w-24.png 2.5x, img/max-w-30.png 3x, img/max-w-30.png 3.5x" draggable="false" />
+        </div>
+  
+        <div class="button" id="restore-button">
+          <img class="icon" srcset="img/restore-w-10.png 1x, img/restore-w-12.png 1.25x, img/restore-w-15.png 1.5x, img/restore-w-15.png 1.75x, img/restore-w-20.png 2x, img/restore-w-20.png 2.25x, img/restore-w-24.png 2.5x, img/restore-w-30.png 3x, img/restore-w-30.png 3.5x" draggable="false" />
+        </div>
+  
+        <div class="button" id="close-button">
+          <img class="icon" srcset="img/close-w-10.png 1x, img/close-w-12.png 1.25x, img/close-w-15.png 1.5x, img/close-w-15.png 1.75x, img/close-w-20.png 2x, img/close-w-20.png 2.25x, img/close-w-24.png 2.5x, img/close-w-30.png 3x, img/close-w-30.png 3.5x" draggable="false" />
+        </div>
+  
+      </div>
+    </div>
+  </header>
+  <div class="spacer"></div>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">
+        Audiofy
+      </div>
+  
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fa-home"></span>
+              <span>Home</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <span class="fa fa-search"></span>
+              <span>Search</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <span class="fa fas fa-book"></span>
+              <span>Your Library</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fas fa-plus-square"></span>
+              <span>Create Playlist</span>
+            </a>
+          </li>
+  
+          <li>
+            <a href="#">
+              <span class="fa fas fa-heart"></span>
+              <span>Liked Songs</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="policies">
+        <ul>
+          <li>
+            <a href="#">Cookies</a>
+          </li>
+          <li>
+            <a href="#">Privacy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="main-container">
+      <div class="topbar">
+        <!-- <div class="prev-next-buttons">
+          <button type="button" class="fa fas fa-chevron-left"></button>
+          <button type="button" class="fa fas fa-chevron-right"></button>
+        </div> -->
+  
+        <!-- <div class="navbar">
+          <ul>
+            <li>
+              <a href="#">Premium</a>
+            </li>
+            <li>
+              <a href="#">Support</a>
+            </li>
+            <li>
+              <a href="#">Download</a>
+            </li>
+            <li class="divider">|</li>
+            <li>
+              <a href="#">Sign Up</a>
+            </li>
+          </ul>
+          <button type="button">Log In</button>
+        </div>  -->
+      </div>
+  
+      <div class="playlists">
+        <h2>Music</h2>
+  
+        <div class="songs" id="songs">
+          
+        </div>
+      </div>
+  
+      
+
+  </div>
+  <div id="seeker">
+    <img src="img/unknown.svg" id="seekerimg" width="60" height="60">
+    <div id="info">
+      <p id="seekertitle">Unknown Song</p>
+      <p id="seekerartist">Unknown Artist</p>
+    </div>
+    <div id="seekerbtns">
+      <div class="seekerbtns">
+        <img src="img/prev.svg" alt="pause" class="seekerbtn" id="prevbtn">
+        <img src="img/pause.svg" alt="pause" id="pauseplaybtn">
+        <img src="img/next.svg" alt="pause" class="seekerbtn" id="nextbtn">
+      </div>
+      <div class="progressdiv">
+        <span id="seekerprogress">0:00</span> 
+        <input type="range" id="progress" min="0" max="90" value="0">
+        <span id="seekerprogresstotal">0:00</span>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://kit.fontawesome.com/23cecef777.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
